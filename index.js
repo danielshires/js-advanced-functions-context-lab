@@ -145,8 +145,6 @@ function findEmployeeByFirstName(srcArray, employeeName) {
         return record.firstName === employeeName
     })
 
-    console.log(searchResult)
-
     return searchResult
 }
 
