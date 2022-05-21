@@ -1,4 +1,4 @@
-/* Your Code Here */
+/* Test Data */
 
 let testEmployee = createEmployeeRecord(["Gray", "Worm", "Security", 1])
 
@@ -30,6 +30,7 @@ const csvTimesOut = [
 ]
 
 let employeeRecords = createEmployeeRecords(csvDataEmployees)
+
 employeeRecords.forEach(function(rec) {
     let timesInRecordRow = csvTimesIn.find(function(row) {
         return rec.firstName === row[0]
@@ -72,7 +73,7 @@ function createEmployeeRecords(arrays) {
     return newMap
 }
 
-const nameExtractor = function(record) {
+function nameExtractor(record) {
     return record.firstName
 }
 
